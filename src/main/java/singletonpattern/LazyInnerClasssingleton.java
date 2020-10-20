@@ -11,9 +11,14 @@ public class LazyInnerClasssingleton {
     //这种形式兼顾了饿汉式的内存浪费，也兼顾了synchronized性能问题
     //完美的屏蔽了这两个缺点
 
-    //默认使用LazyInnerClasssingleton的时候，会喜爱那初始化内部类
+    //默认使用LazyInnerClasssingleton的时候，会优先始化内部类
     //如果不使用的话内部内是不会加载的
-    private LazyInnerClasssingleton(){}
+    private LazyInnerClasssingleton(){
+        if(null != LazyHolder.LAZY){
+            //防止通过反射包里破坏
+            throw new RuntimeException("不允许创建多个实例!");
+        }
+    }
 
     //每一个关键字都不是多余的
     //static 是为了使得单例的空间共享
