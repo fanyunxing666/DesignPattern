@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>abstractfactorypattern.service.IVideoService</OriginalElement>
+  <nodes>
+    <node x="402.50000000000006" y="103.0">abstractfactorypattern.service.CourseFactoryService</node>
+    <node x="10.500000000000057" y="114.5">abstractfactorypattern.service.impl.PythonNoteServiceImpl</node>
+    <node x="772.4545454545455" y="0.0">abstractfactorypattern.service.IVideoService</node>
+    <node x="859.5" y="114.5">abstractfactorypattern.service.impl.JavaVideoServiceImpl</node>
+    <node x="402.50000000000006" y="229.0">abstractfactorypattern.service.impl.JavaCourseFactoryServiceImpl</node>
+    <node x="651.5" y="114.5">abstractfactorypattern.service.impl.PythonVideoServiceImpl</node>
+    <node x="134.9545454545455" y="0.0">abstractfactorypattern.service.INoteService</node>
+    <node x="429.50000000000006" y="355.0">abstractfactorypattern.MainTest</node>
+    <node x="213.50000000000006" y="114.5">abstractfactorypattern.service.impl.JavaNoteServiceImpl</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="abstractfactorypattern.service.impl.JavaNoteServiceImpl" target="abstractfactorypattern.service.INoteService">
+      <point x="0.0" y="-26.5" />
+      <point x="298.00000000000006" y="83.0" />
+      <point x="214.3295454545455" y="83.0" />
+      <point x="15.875" y="26.5" />
+    </edge>
+    <edge source="abstractfactorypattern.service.impl.JavaCourseFactoryServiceImpl" target="abstractfactorypattern.service.CourseFactoryService">
+      <point x="0.0" y="-38.0" />
+      <point x="0.0" y="38.0" />
+    </edge>
+    <edge source="abstractfactorypattern.service.impl.JavaVideoServiceImpl" target="abstractfactorypattern.service.IVideoService">
+      <point x="0.0" y="-26.5" />
+      <point x="946.5" y="83.0" />
+      <point x="862.4545454545455" y="83.0" />
+      <point x="18.0" y="26.5" />
+    </edge>
+    <edge source="abstractfactorypattern.service.impl.PythonVideoServiceImpl" target="abstractfactorypattern.service.IVideoService">
+      <point x="0.0" y="-26.5" />
+      <point x="745.5" y="83.0" />
+      <point x="826.4545454545455" y="83.0" />
+      <point x="-18.0" y="26.5" />
+    </edge>
+    <edge source="abstractfactorypattern.service.impl.PythonNoteServiceImpl" target="abstractfactorypattern.service.INoteService">
+      <point x="0.0" y="-26.5" />
+      <point x="102.00000000000006" y="83.0" />
+      <point x="182.5795454545455" y="83.0" />
+      <point x="-15.875" y="26.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="522.0" y="204.0" />
+  <SelectedNodes>
+    <node>abstractfactorypattern.service.IVideoService</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Constructors</Category>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,4 +1,7 @@
-package prototypepattern.deepclone;
+package prototypepattern.deepclone.service;
+
+import prototypepattern.deepclone.bean.Jingubang;
+import prototypepattern.deepclone.bean.Monkey;
 
 import java.io.*;
 import java.util.Date;
@@ -19,7 +22,7 @@ public class QiTianDaSheng extends Monkey implements Cloneable,Serializable{
         this.jingubang = new Jingubang();
     }
 
-    protected Object clone(){
+    public Object clone(){
         return this.deepClone();
     }
 

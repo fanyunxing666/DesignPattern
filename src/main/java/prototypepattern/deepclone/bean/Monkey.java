@@ -1,4 +1,4 @@
-package prototypepattern.deepclone;
+package prototypepattern.deepclone.bean;
 
 import java.util.Date;
 
