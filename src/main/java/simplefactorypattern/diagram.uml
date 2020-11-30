@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>simplefactorypattern.bean.CourseFactory2</OriginalElement>
+  <nodes>
+    <node x="349.0902777777778" y="-109.0">simplefactorypattern.service.ICourseService</node>
+    <node x="692.0" y="6.0">simplefactorypattern.bean.CourseFactory</node>
+    <node x="212.0" y="-6.0">simplefactorypattern.service.impl.PythonCourseServiceImpl</node>
+    <node x="459.0" y="-6.0">simplefactorypattern.service.impl.JavaCourseServiceImpl</node>
+    <node x="18.4444444444444" y="121.0">simplefactorypattern.MainTest</node>
+    <node x="-203.0" y="6.0">simplefactorypattern.bean.CourseFactory2</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="simplefactorypattern.service.impl.JavaCourseServiceImpl" target="simplefactorypattern.service.ICourseService">
+      <point x="0.0" y="-38.5" />
+      <point x="565.5" y="-26.0" />
+      <point x="447.8402777777778" y="-26.0" />
+      <point x="19.75" y="26.5" />
+    </edge>
+    <edge source="simplefactorypattern.service.impl.PythonCourseServiceImpl" target="simplefactorypattern.service.ICourseService">
+      <point x="0.0" y="-38.5" />
+      <point x="325.5" y="-26.0" />
+      <point x="408.3402777777778" y="-26.0" />
+      <point x="-19.75" y="26.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="509.0" y="36.0" />
+  <SelectedNodes>
+    <node>simplefactorypattern.service.ICourseService</node>
+    <node>simplefactorypattern.bean.CourseFactory</node>
+    <node>simplefactorypattern.service.impl.PythonCourseServiceImpl</node>
+    <node>simplefactorypattern.service.impl.JavaCourseServiceImpl</node>
+    <node>simplefactorypattern.MainTest</node>
+    <node>simplefactorypattern.bean.CourseFactory2</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Constructors</Category>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
