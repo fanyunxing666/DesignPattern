@@ -1,4 +1,4 @@
-package prototypepattern.shallowclone;
+package prototypepattern.shallowclone.service;
 
 /**
  * @Author: charles
@@ -10,7 +10,7 @@ package prototypepattern.shallowclone;
  * @Date Created in 2020/10/20 11:39
  * @Modified By:
  */
-public interface Prototype {
+public interface PrototypeService {
 
-    Prototype clone();
+    PrototypeService clone();
 }

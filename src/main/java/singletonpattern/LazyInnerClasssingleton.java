@@ -22,7 +22,7 @@ public class LazyInnerClasssingleton {
 
     //每一个关键字都不是多余的
     //static 是为了使得单例的空间共享
-    //final 是为了使得方法不被重写，和重载
+    //final 是为了使得方法不被重写
     public static final LazyInnerClasssingleton getInstance(){
         //在返回结果以前，一定会先加载内部类
         return LazyHolder.LAZY;

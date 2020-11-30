@@ -1,6 +1,6 @@
-package simplefactorypattern.impl;
+package simplefactorypattern.service.impl;
 
-import simplefactorypattern.ICourse;
+import simplefactorypattern.service.ICourseService;
 
 /**
  * @Author: charles
@@ -8,9 +8,9 @@ import simplefactorypattern.ICourse;
  * @Date Created in 2020/10/19 16:13
  * @Modified By:
  */
-public class JavaCourse implements ICourse {
+public class JavaCourseServiceImpl implements ICourseService {
 
-    public JavaCourse() {
+    public JavaCourseServiceImpl() {
         makePPT();
     }
 

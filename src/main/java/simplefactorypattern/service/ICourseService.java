@@ -1,4 +1,4 @@
-package simplefactorypattern;
+package simplefactorypattern.service;
 
 /**
  * @Author: charles
@@ -6,7 +6,7 @@ package simplefactorypattern;
  * @Date Created in 2020/10/19 16:08
  * @Modified By:
  */
-public interface ICourse {
+public interface ICourseService {
 
     /*制作PPT*/
     void makePPT();

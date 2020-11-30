@@ -1,7 +1,7 @@
 package simplefactorypattern;
 
-import simplefactorypattern.impl.JavaCourse;
-import simplefactorypattern.factory.CourseFactory2;
+import simplefactorypattern.bean.CourseFactory2;
+import simplefactorypattern.service.impl.JavaCourseServiceImpl;
 
 /**
  * @Author: fan_yunxing
@@ -25,7 +25,7 @@ public class MainTest {
 //        courseFactory2.create("JavaCourse");
 
         CourseFactory2 courseFactory3 = new CourseFactory2();
-        courseFactory3.create(JavaCourse.class);
+        courseFactory3.create(JavaCourseServiceImpl.class);
 
     }
 }

@@ -1,6 +1,6 @@
-package simplefactorypattern.impl;
+package simplefactorypattern.service.impl;
 
-import simplefactorypattern.ICourse;
+import simplefactorypattern.service.ICourseService;
 
 /**
  * @Author: charles
@@ -8,9 +8,9 @@ import simplefactorypattern.ICourse;
  * @Date Created in 2020/10/19 16:19
  * @Modified By:
  */
-public class PythonCourse implements ICourse {
+public class PythonCourseServiceImpl implements ICourseService {
 
-    public PythonCourse() {
+    public PythonCourseServiceImpl() {
         makePPT();
     }
 

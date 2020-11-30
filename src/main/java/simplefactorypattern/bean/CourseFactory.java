@@ -1,6 +1,6 @@
-package simplefactorypattern.factory;
+package simplefactorypattern.bean;
 
-import simplefactorypattern.ICourse;
+import simplefactorypattern.service.ICourseService;
 
 /**
  * @Author: charles
@@ -10,7 +10,7 @@ import simplefactorypattern.ICourse;
  */
 public class CourseFactory {
 
-    public static ICourse create(String className){
+    public static ICourseService create(String className){
 //        if("java".equals(name)){
 //            return new JavaCourse();
 //        }else if("python".equals(name)){
@@ -21,7 +21,7 @@ public class CourseFactory {
 
         try {
             if(null != className && !"".equals(className)){
-                return (ICourse) Class.forName(className).newInstance();
+                return (ICourseService) Class.forName(className).newInstance();
             }
             return null;
         } catch (Exception e) {

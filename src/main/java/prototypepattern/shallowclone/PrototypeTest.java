@@ -1,5 +1,8 @@
 package prototypepattern.shallowclone;
 
+import prototypepattern.shallowclone.bean.Client;
+import prototypepattern.shallowclone.service.impl.ConcretePrototypeAServiceImpl;
+
 import java.util.ArrayList;
 
 /**
@@ -13,7 +16,7 @@ public class PrototypeTest {
     public static void main(String[] args) {
 
         //创建一个具体需要克隆的对象
-        ConcretePrototypeA concretePrototype = new ConcretePrototypeA();
+        ConcretePrototypeAServiceImpl concretePrototype = new ConcretePrototypeAServiceImpl();
         //填充属性方便测试
         concretePrototype.setName("张三");
         concretePrototype.setCode("01");
@@ -22,7 +25,7 @@ public class PrototypeTest {
 
         //创建client对象，准备开始克隆
         Client client = new Client(concretePrototype);
-        ConcretePrototypeA concretePrototypeClone = (ConcretePrototypeA)client.startClone(concretePrototype);
+        ConcretePrototypeAServiceImpl concretePrototypeClone = (ConcretePrototypeAServiceImpl)client.startClone(concretePrototype);
         System.out.println("克隆就的对象:"+concretePrototypeClone);
         System.out.println("原对象中引用类型地址值："+concretePrototypeClone.getHobbies());
         System.out.println("克隆对象中引用类型地址值:"+concretePrototypeClone.getHobbies());

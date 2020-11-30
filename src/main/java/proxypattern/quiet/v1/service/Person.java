@@ -1,4 +1,4 @@
-package proxypattern.quiet.v1;
+package proxypattern.quiet.v1.service;
 
 /**
  * @Author: charles

@@ -1,6 +1,6 @@
-package simplefactorypattern.factory;
+package simplefactorypattern.bean;
 
-import simplefactorypattern.ICourse;
+import simplefactorypattern.service.ICourseService;
 
 /**
  * @Author: charles
@@ -10,7 +10,7 @@ import simplefactorypattern.ICourse;
  */
 public class CourseFactory2 {
 
-    public static ICourse create(Class<? extends ICourse> clazz) {
+    public static ICourseService create(Class<? extends ICourseService> clazz) {
         try {
             if(clazz != null){
                 return clazz.newInstance();

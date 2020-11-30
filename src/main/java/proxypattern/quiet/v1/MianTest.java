@@ -1,5 +1,8 @@
 package proxypattern.quiet.v1;
 
+import proxypattern.quiet.v1.bean.Father;
+import proxypattern.quiet.v1.bean.Son;
+
 /**
  * @Author: charles
  * @Description:  测试

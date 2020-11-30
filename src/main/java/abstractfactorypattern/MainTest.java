@@ -1,5 +1,7 @@
 package abstractfactorypattern;
 
+import abstractfactorypattern.service.impl.JavaCourseFactoryServiceImpl;
+
 /**
  * @Author: charles
  * @Description:
@@ -9,8 +11,9 @@ package abstractfactorypattern;
 public class MainTest {
 
     public static void main(String[] args) {
-        JavaCourseFactory javaCourseFactory = new JavaCourseFactory();
-        javaCourseFactory.createNote().edit();
+        JavaCourseFactoryServiceImpl javaCourseFactory = new JavaCourseFactoryServiceImpl();
+
         javaCourseFactory.createVideo().record();
+        javaCourseFactory.createNote().edit();
     }
 }

@@ -1,4 +1,6 @@
-package proxypattern.quiet.v1;
+package proxypattern.quiet.v1.bean;
+
+import proxypattern.quiet.v1.service.Person;
 
 /**
  * @Author: charles
@@ -6,7 +8,7 @@ package proxypattern.quiet.v1;
  * @Date Created in 2020/10/26 16:16
  * @Modified By:
  */
-public class Son implements Person{
+public class Son implements Person {
 
 
     public void findLove() {

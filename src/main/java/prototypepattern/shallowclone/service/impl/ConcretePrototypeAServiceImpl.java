@@ -1,4 +1,6 @@
-package prototypepattern.shallowclone;
+package prototypepattern.shallowclone.service.impl;
+
+import prototypepattern.shallowclone.service.PrototypeService;
 
 import java.util.List;
 
@@ -8,7 +10,7 @@ import java.util.List;
  * @Date Created in 2020/10/20 13:40
  * @Modified By:
  */
-public class ConcretePrototypeA implements Prototype{
+public class ConcretePrototypeAServiceImpl implements PrototypeService {
 
     private String code;
     private String name;
@@ -37,11 +39,12 @@ public class ConcretePrototypeA implements Prototype{
     public void setHobbies(List hobbies) {
         this.hobbies = hobbies;
     }
-    public Prototype clone() {
-        ConcretePrototypeA concretePrototypeA = new  ConcretePrototypeA();
-        concretePrototypeA.setCode(this.code);
-        concretePrototypeA.setHobbies(this.hobbies);
-        concretePrototypeA.setName(this.name);
-        return concretePrototypeA;
+
+    public PrototypeService clone() {
+        ConcretePrototypeAServiceImpl concretePrototypeAServiceImpl = new ConcretePrototypeAServiceImpl();
+        concretePrototypeAServiceImpl.setCode(this.code);
+        concretePrototypeAServiceImpl.setHobbies(this.hobbies);
+        concretePrototypeAServiceImpl.setName(this.name);
+        return concretePrototypeAServiceImpl;
     }
 }
